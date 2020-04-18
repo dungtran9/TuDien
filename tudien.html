@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="translate" onclick="tranSlate()">
+<script>
+    let english = ["one", "two", "three", "four", "five", "six", "seven", "eight", "night", "ten"];
+    let tiengviet = ["mot", "hai", "ba", "bon", "nam", "sau", "bay", "tam", "chin", "muoi"];
+
+    function tranSlate() {
+        let tv = prompt("nhap tu can dich ");
+        flag = false;
+        for (let i = 0; i < tiengviet.length; i++) {
+            if (tv == tiengviet[i]) {
+                flag = true;
+                alert(english[i])
+                break;
+            }
+        }
+        if (!flag) {
+            alert("khong tim thay")
+        }
+    }
+</script>
+</body>
+</html>
